@@ -1,0 +1,149 @@
+/* Tea Cozy Site Implementation Project
+ * AJ Harrington <r11132a@gmail.com>
+ */
+
+
+/*  Please note:  I looked at the source for the project when I had issues.
+ *  still didn't get it quite right.  Anything more hints and direction you
+ *  can give would be appreciated.  Thank you */
+
+/* Defaults */
+body {
+  font-family:       Helvetica;
+  font-size:         22px;
+  color:             seashell;
+  background-color:  black;
+  opacity:           0.9;
+  text-align:        center;
+}
+
+/* Main content box */
+#content {
+  width:  1200px;
+  margin: auto;
+}
+
+/* Header
+ * Contains: logo and menu
+ */
+#header {
+  position:         fixed;
+  top:              0px;
+  height:           69px;
+  width:            100%;
+  border-bottom:    1px solid seashell;
+  align-items:      center;
+  z-index:          1;
+  opacity:          1;
+  background-color: black;
+}
+
+/* Menu inside the header */
+#header nav {
+  text-align:       right;
+  margin-right:     10px;
+  display:          inline-block;
+  flex-grow:        1;
+}
+
+nav a {
+  color:           seashell;
+  padding:         20px 10px;
+  text-decoration: underline;
+}
+
+#header img {
+  height:        50px;
+  margin-left:   10px;
+}
+
+
+/* Mission section */
+#mission {
+  height:           700px;
+  width:            1200px;
+  background-image: url("../imgs/img-mission-background.jpg");
+  position:         relative;
+  top:              70px;
+}
+
+#missiontext {
+  background-color: black;
+  margin:           auto;
+  width:            100%;
+}
+
+/* Teas of the Month section */
+
+#teamonth {
+  width:       1000px;
+  margin:      auto;
+  height:      700px;
+}
+
+.teas {
+  justify-content: space-around;
+}
+
+.teabox {
+  padding 5px;
+  margin-right: 10px;
+}
+
+.teabox img {
+  height:  200px;
+  width:   300px;
+}
+
+/* Locations section */
+
+#locations {
+  height:           500px;
+  background-image: url("../imgs/img-locations-background.jpg");
+  width:            1200px;
+}
+
+#locations h2 {
+  text-align:       center;
+}
+
+#loccontainer {
+  margin: auto;
+}
+
+.locationbox {
+  opacity:          1.0;
+  width:            300px;
+  background-color: black;
+  display:          flex;
+  flex-basis:       280px;
+  flex-direction:   column;
+  margin:           5px 20px;
+  padding:          10px;
+  justify-content:  center;
+}
+
+/* Content section */
+
+#contact {
+  height: 200px;
+}
+
+/* Footer section */
+
+#footer {
+  text-align:   left;
+  padding-left: 20px;
+}
+
+/* Refectored common values for flex containers */
+.flexbox {
+  display:          flex;
+  justify-content:  center;
+  flex-wrap:        wrap;
+}
+
+.section {
+  padding-top: 70px;
+}
+
